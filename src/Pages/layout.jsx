@@ -54,6 +54,16 @@ const Layout = () => {
             </li>
             <li>
               <Link
+                to="/dashboard/details"
+                className={`block p-4 ${
+                  location.pathname === '/dashboard/details' ? 'bg-gray-700' : 'hover:bg-gray-600'
+                }`}
+              >
+                Product details
+              </Link>
+            </li>
+            <li>
+              <Link
                 to="/dashboard/logout"
                 className={`block p-4 ${
                   location.pathname === '/dashboard/logout' ? 'bg-gray-700' : 'hover:bg-gray-600'
