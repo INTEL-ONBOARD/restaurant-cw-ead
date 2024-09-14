@@ -37,7 +37,7 @@ const Stock = () => {
   <div className="mt-5 sm:mx-auto sm:w-full sm:max-w-sm">
     <form className="space-y-4" action="#" method="POST" onSubmit={handleAddDish}>
       <div>
-        <label for="productname" class="block text-sm font-medium leading-6 text-white">Product Name</label>
+        <label for="productname" class="block text-sm font-medium leading-6 text-black">Product Name</label>
         <div className="mt-2">
           <input id="productname" required class="block w-full rounded-md border-0 py-1.5 text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></input>
         </div>
@@ -46,14 +46,14 @@ const Stock = () => {
       <div>
         <label for="price" class="block text-sm font-medium leading-6 text-gray-900">Price</label>
         <div className="mt-2">
-          <input id="price" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></input>
+          <input id="price" required class="block w-full rounded-md border-0 py-1.5 text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></input>
         </div>
       </div>
 
       <div>
         <label for="price" class="block text-sm font-medium leading-6 text-gray-900">Quantity</label>
         <div className="mt-2">
-          <input id="price" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></input>
+          <input id="price" required class="block w-full rounded-md border-0 py-1.5 text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></input>
         </div>
       </div>
 
