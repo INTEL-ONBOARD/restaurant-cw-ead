@@ -34,6 +34,7 @@ const Navbar = () => {
                                 id="user-menu-button" 
                                 aria-expanded="false" 
                                 aria-haspopup="true"
+                                onClick={() => navigate('/dashboard')}
                             >
                                 <span className="absolute -inset-1.5"></span>
                                 <span className="sr-only">Open user menu</span>

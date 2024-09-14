@@ -8,11 +8,13 @@ import Stock from './Pages/Stock';
 import Profile from './Pages/Profile';
 import Payments from './Pages/Payments.jsx';
 import Purchases from './Pages/Purchases';
+import Home from './Pages/home.jsx';
 
 const App = () => {
   return (
     <Router>
       <Routes>
+      <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/order" element={<Order />} />
