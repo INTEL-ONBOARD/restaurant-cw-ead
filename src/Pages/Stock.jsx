@@ -28,7 +28,7 @@ const Stock = () => {
   };
 
   return (
-    <div className="flex items-center sm:mx-auto sm:w-full sm:max-w-sm justify-center bg-gray-50">
+    <div className="flex items-center md:mx-auto md:w-full md:max-w-sm justify-center bg-gray-50">
 <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
   <div className="sm:mx-auto sm:w-full sm:max-w-sm">
     <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Add Product</h2>
@@ -37,9 +37,9 @@ const Stock = () => {
   <div className="mt-5 sm:mx-auto sm:w-full sm:max-w-sm">
     <form className="space-y-4" action="#" method="POST" onSubmit={handleAddDish}>
       <div>
-        <label for="productname" class="block text-sm font-medium leading-6 text-black">Product Name</label>
+        <label for="productname" class="block text-sm font-medium leading-6 text-white">Product Name</label>
         <div className="mt-2">
-          <input id="productname" required class="block w-full rounded-md border-0 py-1.5 text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></input>
+          <input id="productname" required class="block w-full rounded-md border-0 py-1.5 text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></input>
         </div>
       </div>
 
