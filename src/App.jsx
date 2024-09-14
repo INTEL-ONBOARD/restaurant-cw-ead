@@ -1,14 +1,14 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Layout from './Pages/Layout';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import Home from './Pages/home';
+import Layout from './Pages/layout';
 import Login from './Pages/Login';
-import Register from './Pages/Register';
 import Order from './Pages/Order';
-import Stock from './Pages/Stock';
+import Payments from './Pages/Payments';
 import Profile from './Pages/Profile';
-import Payments from './Pages/Payments.jsx';
 import Purchases from './Pages/Purchases';
-import Home from './Pages/home.jsx';
+import Register from './Pages/Register';
+import Stock from './Pages/Stock';
 
 const App = () => {
   return (
