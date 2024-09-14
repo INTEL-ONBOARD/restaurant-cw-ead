@@ -26,11 +26,7 @@ const Login = () => {
       });
 
       if (response.ok) {
-        // If login is successful, save user data to sessionStorage
-        const userData = await response.json();
-        sessionStorage.setItem('user', JSON.stringify(userData));
-
-        // Navigate to /store
+        // If login is successful, navigate to /store
         navigate('/store');
       } else {
         // If login fails, show an error message

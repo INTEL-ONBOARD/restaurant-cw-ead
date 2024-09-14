@@ -1,5 +1,5 @@
 import React from 'react';
-import { Outlet, Link, useLocation } from 'react-router-dom';
+import { Link, Outlet, useLocation } from 'react-router-dom';
 
 const Layout = () => {
   const location = useLocation();
@@ -48,8 +48,7 @@ const Layout = () => {
           </ul>
         </nav>
       </div>
-      {/* Main Content */}
-      <div className="flex-grow p-8 bg-white text-black">
+      <div className="flex-grow p-8">
         <Outlet />
       </div>
     </div>
