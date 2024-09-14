@@ -6,9 +6,8 @@ const Layout = () => {
 
   return (
     <div className="flex h-screen bg-gray-100">
-      {/* Sidebar */}
       <div className="w-64 bg-gray-800 text-white flex flex-col">
-        <div className="text-center text-2xl font-semibold p-4 bg-gray-900">
+        <div className="text-center text-2xl font-semibold p-4">
           <span className="text-yellow-400">Store Name</span>
         </div>
         <nav className="flex-grow">
@@ -16,7 +15,9 @@ const Layout = () => {
             <li>
               <Link
                 to="/dashboard/purchase"
-                className={`block p-4 rounded-lg ${location.pathname === '/dashboard/purchase' ? 'bg-gray-700' : 'hover:bg-gray-600'} transition-colors`}
+                className={`block p-4 ${
+                  location.pathname === '/dashboard/purchase' ? 'bg-gray-700' : 'hover:bg-gray-600'
+                }`}
               >
                 Purchases
               </Link>
@@ -24,7 +25,9 @@ const Layout = () => {
             <li>
               <Link
                 to="/dashboard/stock"
-                className={`block p-4 rounded-lg ${location.pathname === '/dashboard/stock' ? 'bg-gray-700' : 'hover:bg-gray-600'} transition-colors`}
+                className={`block p-4 ${
+                  location.pathname === '/dashboard/stock' ? 'bg-gray-700' : 'hover:bg-gray-600'
+                }`}
               >
                 Stock
               </Link>
@@ -32,7 +35,9 @@ const Layout = () => {
             <li>
               <Link
                 to="/dashboard/profile"
-                className={`block p-4 rounded-lg ${location.pathname === '/dashboard/profile' ? 'bg-gray-700' : 'hover:bg-gray-600'} transition-colors`}
+                className={`block p-4 ${
+                  location.pathname === '/dashboard/profile' ? 'bg-gray-700' : 'hover:bg-gray-600'
+                }`}
               >
                 My Profile
               </Link>
@@ -40,7 +45,9 @@ const Layout = () => {
             <li>
               <Link
                 to="/dashboard/payments"
-                className={`block p-4 rounded-lg ${location.pathname === '/dashboard/payments' ? 'bg-gray-700' : 'hover:bg-gray-600'} transition-colors`}
+                className={`block p-4 ${
+                  location.pathname === '/dashboard/payments' ? 'bg-gray-700' : 'hover:bg-gray-600'
+                }`}
               >
                 Payments
               </Link>
@@ -48,7 +55,7 @@ const Layout = () => {
           </ul>
         </nav>
       </div>
-      <div className="flex-grow p-8">
+      <div className="flex-grow p-8 h-screen w-screen">
         <Outlet />
       </div>
     </div>
