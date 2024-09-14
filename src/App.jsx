@@ -1,28 +1,27 @@
-import React, { useState } from 'react';
-import './App.css';
-
-import Layout from './Pages/layout';
-import Home from './Pages/home';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Layout from './Pages/Layout';
 import Login from './Pages/Login';
-import Register from './Pages/register';
-import Order from './Pages/order';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-
-
+import Register from './Pages/Register';
+import Order from './Pages/Order';
+import Stock from './Pages/Stock';
+import Profile from './Pages/Profile';
+import Payments from './Pages/Payments.jsx';
+import Purchases from './Pages/Purchases';
 
 const App = () => {
-
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Layout />}>
-        <Route path="/store" element={<Home />} /> 
-          </Route>
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/order" element={<Order />} />
-          
-
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/order" element={<Order />} />
+        <Route path="/dashboard" element={<Layout />}>
+          <Route path="purchase" element={<Purchases />} /> {/* Default view */}
+          <Route path="stock" element={<Stock />} />
+          <Route path="profile" element={<Profile />} />
+          <Route path="payments" element={<Payments />} />
+        </Route>
       </Routes>
     </Router>
   );
