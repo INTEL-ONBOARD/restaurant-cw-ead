@@ -52,6 +52,16 @@ const Layout = () => {
                 Payments
               </Link>
             </li>
+            <li>
+              <Link
+                to="/dashboard/logout"
+                className={`block p-4 ${
+                  location.pathname === '/dashboard/logout' ? 'bg-gray-700' : 'hover:bg-gray-600'
+                }`}
+              >
+                Logout
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>
