@@ -6,7 +6,7 @@ const Payments = () => {
 
   return (
     <div className=" items-center justify-center max-w-lg mx-auto p-6 bg-white rounded-lg shadow-md">
-      <h2 className="text-2xl font-semibold mb-6 text-black">Checkout</h2>
+      <h2 className="text-2xl font-semibold mb-6 text-black">Payment</h2>
 
       {/* Delivery Method */}
       <div className="mb-6">
@@ -22,8 +22,8 @@ const Payments = () => {
               className="mr-2"
             />
             <span className="font-semibold text-black">Standard</span>
-            <p className="text-sm">1 hour</p>
-            <p className="font-medium">$5.00</p>
+            <p className="text-sm text-black">1 hour</p>
+            <p className="font-medium text-black">$5.00</p>
           </label>
           <label className="border p-4 rounded-md w-full md:w-[48%] cursor-pointer">
             <input
@@ -35,8 +35,8 @@ const Payments = () => {
               className="mr-2"
             />
             <span className="font-semibold text-black">Express</span>
-            <p className="text-sm">30 minitues</p>
-            <p className="font-medium">$16.00</p>
+            <p className="text-sm text-black">30 minitues</p>
+            <p className="font-medium text-black">$16.00</p>
           </label>
         </div>
       </div>
